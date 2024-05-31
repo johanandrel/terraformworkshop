@@ -22,3 +22,9 @@ Målet med kurset er å kunne skrive infrastruktur som kode og bruke Terraform t
 - [Terraform del 1](/terraform_del1.md)
 - [Terraform del 2](/terraform_del2.md)
 
+## Ressurser
+
+[Terraform registry](https://registry.terraform.io/)
+
+[Azure provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) 
+
