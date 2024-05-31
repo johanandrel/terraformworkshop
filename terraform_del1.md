@@ -81,5 +81,5 @@ resource_group_tags = {
 
 - For å bruke våre nye verdier må vi fortelle til Terraform hvilken fil den skal bruke når vi kjører *plan* eller *apply*. Prøv dette ved å kjøre følgende: ``terraform plan -var-file=dev.tfvars``
 
-Nå har du basic struktur på plass så fortsett til del 2 for å faktisk lage noe!
+Nå har du basic struktur på plass så [fortsett til neste del](/terraform_del2.md) for å faktisk lage noe!
 

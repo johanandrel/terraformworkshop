@@ -15,7 +15,7 @@ Når Terraform leser konfigurasjonsfilene og gjør endringer i infrastrukturen b
  
  2. Initialiser Terraform (``terraform init``)
  
- 3. Beskriv ressursene du trenger i Terraform (*.tf*-filer) 
+ 3. Beskriv ressursene du trenger i Terraform (``.tf`` filer) 
  
  4. Kjør ``terraform plan``
  
@@ -23,8 +23,4 @@ Når Terraform leser konfigurasjonsfilene og gjør endringer i infrastrukturen b
 
 Man kan starte med å ha én Terraform fil til infrastrukturen sin, men det er ofte vanlig å splitte opp ulike type ressurser i ulike filer hvis det blir mange ressurser. 
 
-## Ressurser
-
-[Terraform registry](https://registry.terraform.io/)
-
-[Azure provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) 
+Gå videre for å få en kort [intro til Azure](/introAzure.md)
