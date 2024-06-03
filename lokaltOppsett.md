@@ -28,4 +28,4 @@
 
 - Kjør ``terraform plan`` for å sammenlikne din konfigurasjon med infrastrukturen i skyen (her forventer vi ingen endringer siden vi ikke har beskrevet noen ressurser enda)
 
-Gå videre til neste del for å lage vår første ressurs!
+Gå [videre til neste del](/terraform_del1.md) for å lage vår første ressurs!
