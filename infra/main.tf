@@ -14,6 +14,28 @@ resource "random_pet" "ressursgruppe" {
   length = 3
 }
 
+resource "random_pet" "storageaccount" {
+  length    = 3
+  separator = ""
+}
+
+resource "azurerm_storage_account" "storage_account" {
+  name                     = random_pet.storageaccount.id
+  resource_group_name      = azurerm_resource_group.resource_group.name
+  location                 = azurerm_resource_group.resource_group.location
+  account_tier             = "Standard"
+  account_replication_type = "GRS"
+  tags                     = var.resource_group_tags
+}
+
+module "containerapp" {
+  source                  = "./modules/containerapp"
+  resource_group_name     = azurerm_resource_group.resource_group.name
+  resource_group_location = azurerm_resource_group.resource_group.location
+  environment_name        = "<settinmiljønavn>"
+  app_name                = "<settinnappnavn>"
+}
+
 ###
 ### Noen ekstra eksempler. Fjern kommentarene hvis du vil bruke de
 ###
