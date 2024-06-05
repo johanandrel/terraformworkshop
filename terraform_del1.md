@@ -37,34 +37,6 @@ variable "resource_group_tags" {
 
 - Husk å sette inn riktig e-post (din egen) i ```resource_group_tags``` definisjonen før du går videre
 
-### main.tf
-
-- Lag en ``main.tf``fil. Her skal vi ha selve infrastrukturen vår. Vi starter med å ha én Terraform fil til dette, men det er ofte vanlig å splitte opp ulike type ressurser i ulike filer hvis det blir mange ressurser. 
-
-- Legg til følgende kode i ``main.tf```
-
-```
-# Lar oss hente ut subscription detaljer
-data "azurerm_subscription" "current" {
-}
-```
-
-Dette er en *data* ressurs, dvs. at den leser ut data fra en eksisterende ressurs. Denne kan brukes til å lese ut info fra ressurser som du selv ikke har laget i dine Terraform filer
-
-### output.tf
-
-- Lag en ``output.tf``fil. Her legger man *outputs*, altså verdier man vil skrive ut som et resultat av at vi kjører Terraform. La oss hente ut en verdi fra *azurerm_subscription* som vi lagde i forrige steg:
-
-- Legg følgende inn i ``output.tf``:
-
-```
-output "subscription_name" {
-  value = data.azurerm_subscription.current.display_name
-}
-````
-
-- Kjør ``terraform plan`` og se om du får skrevet ut noe
-
 ### dev.tfvars
 
 En vanlig måte å faktisk gi variablene som er definert i ``variables.tf`` verdier er å ha én ``.tfvars`` fil som inneholder verdiene. Dermed kan man ha flere sett med verdier, men gjenbruke resten av Terraform koden. Det blir også lettere å håndtere eventuelle sensitive verdier når de ikke er blandet inn i de andre Terraform filene. 
@@ -80,6 +52,34 @@ resource_group_tags = {
 ```
 
 - For å bruke våre nye verdier må vi fortelle til Terraform hvilken fil den skal bruke når vi kjører *plan* eller *apply*. Prøv dette ved å kjøre følgende: ``terraform plan -var-file=dev.tfvars``
+
+### main.tf
+
+- Lag en ``main.tf``fil. Her skal vi ha selve infrastrukturen vår. Vi starter med å ha én Terraform fil til dette, men det er ofte vanlig å splitte opp ulike type ressurser i ulike filer hvis det blir mange ressurser. 
+
+- Legg til følgende kode i ``main.tf``
+
+```
+# Lar oss hente ut subscription detaljer
+data "azurerm_subscription" "current" {
+}
+```
+
+Dette er en *data* ressurs, dvs. at den leser ut data fra en eksisterende ressurs. Denne kan brukes til å lese ut info fra ressurser som du selv ikke har laget i dine Terraform filer
+
+### output.tf
+
+- Lag en ``output.tf`` fil. Her legger man *outputs*, altså verdier man vil skrive ut som et resultat av at vi kjører Terraform. La oss hente ut en verdi fra *azurerm_subscription* som vi lagde i forrige steg:
+
+- Legg følgende inn i ``output.tf``:
+
+```
+output "subscription_name" {
+  value = data.azurerm_subscription.current.display_name
+}
+```
+
+- Kjør ``terraform plan`` og se om du får skrevet ut noe
 
 Nå har du basic struktur på plass så [fortsett til neste del](/terraform_del2.md) for å faktisk lage noe!
 
