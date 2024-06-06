@@ -8,4 +8,4 @@ Husk imidlertid at når vi provisjonerer ressurser i Azure (og sky generelt) så
 
 For å skille ressursene fra hverandre og ha oversikt i vår subscription skal alle lage sin egen *resource group*. Dette er en logisk gruppering av ressurser som gjør at alle kan ha sine ting i hver sin gruppe og ha oversikt over sine ting. Vi skal selvfølgelig lage denne ved hjelp av Terraform!
 
-Gå videre for å starte å [sette opp Terraform](/terraform_del1.md)
+Gå videre for å starte å [sette opp Terraform](/lokaltOppsett.md)
