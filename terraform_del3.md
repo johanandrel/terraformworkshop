@@ -136,3 +136,7 @@ Hvis du går inn i mappen til vår modul så kan du se i `output.tf` hvilke egen
 
 Kjør ``terraform apply var-file=dev.tfvars`` for å se om vi får noe output fra modulen!
 
+## Neste del
+
+[I neste del](/terraform_del4.md) skal vi fokusere på sikkerhet og scanning av Terraform kode!
+
