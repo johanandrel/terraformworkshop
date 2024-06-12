@@ -19,8 +19,9 @@ Målet med kurset er å kunne skrive infrastruktur som kode og bruke Terraform t
 - [Kort intro til Terraform <-- start her!](/introTerraform.md)
 - [Kort intro til Azure](/introAzure.md)
 - [Lokalt oppsett av Terraform mot Azure](/lokaltOppsett.md)
-- [Terraform del 1](/terraform_del1.md)
-- [Terraform del 2](/terraform_del2.md)
+- [Terraform del 1 (struktur)](/terraform_del1.md)
+- [Terraform del 2 (provisjonere infrastruktur)](/terraform_del2.md)
+- [Terraform del 3 (moduler)](/terraform_del3.md)
 
 ## Ressurser
 
