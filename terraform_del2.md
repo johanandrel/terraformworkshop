@@ -51,3 +51,7 @@ Hvis du vil slette ressursene du har laget med Terraform kan du kjøre:
  
  Dette gjør det lettere og rimeligere å teste ut ressurser for man kan rive de ned istedenfor å ha de stående å gå fordi man vil fortsette en annen gang.
 
+ ## Neste del
+ 
+ [I neste del](/terraform_del3.md) skal vi se nærmere på ``module`` ressursen og Terraform *moduler* som gjør at vi kan gjenbruke Terraform kode flere steder.
+
