@@ -3,7 +3,7 @@ output "subscription_name" {
 }
 
 output "module_output" {
-  value = module.ramdomsa.storageaccount_name
+  value = module.module1.storageaccount_name
 }
 
 ##

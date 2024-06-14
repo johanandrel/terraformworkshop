@@ -29,13 +29,17 @@ resource "azurerm_storage_account" "storage_account" {
   tags                     = var.resource_group_tags
 }
 
-module "ramdomsa" {
-  source              = "./modules/randomstorage"
-  resource_group_name = azurerm_resource_group.resource_group.name
-  location            = azurerm_resource_group.resource_group.location
-  tags                = var.resource_group_tags
-  create_random_name  = true
+module "module1" {
+  source                  = "./modules/randomstorage"
+  resource_group_name     = azurerm_resource_group.resource_group.name
+  location                = azurerm_resource_group.resource_group.location
+  tags                    = var.resource_group_tags
 }
+
+###
+### Noen ekstra eksempler. Fjern kommentarene hvis du vil bruke de
+###
+
 
 # module "containerapp" {
 #   source                  = "./modules/containerapp"
@@ -44,10 +48,6 @@ module "ramdomsa" {
 #   environment_name        = "<settinnmiljønavn>"
 #   app_name                = "<settinnappnavn>"
 # }
-
-###
-### Noen ekstra eksempler. Fjern kommentarene hvis du vil bruke de
-###
 
 # # Lar oss hente ut en ressursgruppe som noen andre har laget
 # data "azurerm_resource_group" "myrgs" {

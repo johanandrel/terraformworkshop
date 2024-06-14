@@ -59,7 +59,7 @@ resource "azurerm_storage_account" "storage_account" {
 
 **output.tf**
 ```
-output "azurerm_randomstorage_result" {
+output "storageaccount_name" {
   value = "Wohoo, bra jobba! Din storage container heter ${azurerm_storage_account.storage_account.name}"
 }
 ```
