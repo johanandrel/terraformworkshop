@@ -36,3 +36,4 @@ terraform.rc
 
 # Backup
 /infra copy
+/infra/scripts

@@ -23,6 +23,7 @@ Målet med kurset er å kunne skrive infrastruktur som kode og bruke Terraform t
 - [Terraform del 2 - provisjonere infrastruktur](/terraform_del2.md)
 - [Terraform del 3 - moduler](/terraform_del3.md)
 - [Terraform del 4 - sikkerhetsscanning](/terraform_del4.md)
+- [Terraform del 5 - RBAC og scripts](/terraform_del5.md)
 
 ## Ressurser
 
