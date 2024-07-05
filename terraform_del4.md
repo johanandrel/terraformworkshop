@@ -42,3 +42,7 @@ Hvis du har installert *trivy* lokalt kan du kjøre en scan ved å kjøre ``triv
 
 - Er det noe vi kan gjøre med vår Terraform kode for å få et bedre resultat?
 
+## Neste del
+
+[I neste del](/terraform_del5.md) er det noen flere oppgaver hvor vi skal se på tilgangsstyring og kjøring av scripts via Terraform!
+
